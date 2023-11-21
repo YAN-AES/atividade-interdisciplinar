@@ -1,11 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  Login
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Login</title>
+  </head>
+
+  <body class="w-full h-screen flex justify-center items-center relative">
+    <div
+      class="rounded-lg border-2 border-emerald-200 bg-neutral-50 shadow-md p-4 z-10 w-80"
+    >
+      <h1
+        class="flex justify-center items-center text-emerald-800 font-poppins text-2xl font-bold py-2"
+      >
+        Login
+      </h1>
+      <div>
+        <form
+          action="/map/map.html"
+          class="flex flex-col justify-center items-center gap-1"
+        >
+          <div class="flex flex-col gap-2 w-full">
+            <div class="w-full flex flex-col">
+              <label
+                for="username"
+                class="text-emerald-800 font-roboto text-base font-semibold"
+                >Email</label
+              >
+              <div class="relative">
+                <i
+                  class="ph ph-user text-emerald-800 absolute top-1/2 left-3 transform -translate-y-1/2"
+                ></i>
+                <input
+                  type="text"
+                  placeholder="usuario@gmail.com"
+                  class="rounded-md border-2 border-emerald-100 bg-emerald-50 text-emerald-600 font-roboto text-base font-semibold pl-10 placeholder:text-emerald-800 w-full"
+                />
+              </div>
+            </div>
+            <div class="w-full flex flex-col">
+              <label
+                for="password"
+                class="text-emerald-800 font-roboto text-base font-semibold"
+                >Senha</label
+              >
+              <div class="relative">
+                <i
+                  class="ph ph-lock absolute text-emerald-800 top-1/2 left-3 transform -translate-y-1/2"
+                ></i>
+                <input
+                  type="password"
+                  placeholder="************"
+                  class="rounded-md border-2 border-emerald-100 bg-emerald-50 text-emerald-600 font-roboto text-base font-semibold pl-10 placeholder:text-emerald-800 pr-10 w-full"
+                />
+                <i
+                  class="ph ph-eye absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer text-emerald-800"
+                  id="togglePassword"
+                ></i>
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              class="rounded-md bg-emerald-500 shadow-md text-emerald-50 text-center font-poppins text-24 font-bold px-2 py-2 w-full"
+            >
+              Login
+            </button>
+          </div>
+        </form>
+        <p
+          class="flex justify-center items-center text-neutral-600 font-roboto text-base font-semibold"
+        >
+          Não tem uma conta?
+          <a
+            href="/signup/index.html"
+            class="text-emerald-600 font-roboto text-base font-semibold ml-1"
+            >Crie uma</a
+          >
+        </p>
+      </div>
+    </div>
+    <div class="absolute left-0 top-0 w-full h-full">
+      <div
+        class="w-full h-full bg-emerald-700/80 absolute left-0 top-0 backdrop-blur-md"
+      ></div>
+      <img src="../image 23.png" alt="" class="w-full h-full" />
+    </div>
+  </body>
 </html>
